@@ -1,0 +1,48 @@
+function palindrome(str) {
+  let strClean = str.replace(/[^a-z0-9]/gi, "").toUpperCase(); //очищаем слово
+
+  //четное слово
+  if (strClean.length % 2 === 0) {
+    let strL = strClean.length / 2; //пол длины слова
+    //получаем первую часть слова
+    let newStrFirst = "";
+    for (let i = 0; i < strL; i++) {
+      newStrFirst += strClean[i];
+    }
+    console.log("Четное слово - первая часть: " + newStrFirst);
+    //получаем вторую часть слова наоборот
+    let newStrSecond = "";
+    for (let i = strClean.length - 1; i >= strL; i--) {
+      newStrSecond += strClean[i];
+    }
+    console.log("Четное слово - вторая часть: " + newStrSecond);
+    if (newStrFirst === newStrSecond) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  // не четное слово
+  if (strClean.length % 2 === 1) {
+    let strL = (strClean.length - 1) / 2; //пол длины слова // 7-1 / 2 = 3
+    //получаем первую часть слова
+    let newStrFirst = "";
+    for (let i = 0; i < strL; i++) {
+      newStrFirst += strClean[i];
+    }
+    console.log("НЕЧетное слово - первая часть: " + newStrFirst);
+
+    let newStrSecond = "";
+    for (let i = strClean.length - 1; i > strL; i--) {
+      newStrSecond += strClean[i];
+    }
+    console.log("НЕЧетное слово - вторая часть: " + newStrSecond);
+    if (newStrFirst === newStrSecond) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+palindrome("1 eye for of 1 eye.");
