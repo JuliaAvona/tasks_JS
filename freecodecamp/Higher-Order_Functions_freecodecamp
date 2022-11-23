@@ -1,0 +1,14 @@
+const squareList = arr => {
+    // Only change code below this line
+    const allNum = arr.filter(num => num >= 0);
+    const allNum2 = allNum.filter(num => Number.isInteger(num));
+    arr = allNum2.map(num => num*num);
+    return arr;
+    // Only change code above this line
+  };
+  
+  const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+
+console.log(squaredIntegers)
+
+//Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem - FREECODECAMP
