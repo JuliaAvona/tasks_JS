@@ -1,0 +1,27 @@
+// Место для первой задачи
+function sayHello(name) {
+    return `Привет, ${name}!`;
+}
+
+// Место для второй задачи
+function returnNeighboringNumbers(num) {
+    let newArr = [];
+    newArr.push(num - 1);
+    newArr.push(num);
+    newArr.push(num + 1);
+    return newArr;
+}
+
+// Место для третьей задачи
+function getMathResult(num1, num2) {
+  if (typeof num2 !== 'number' || num2 <= 0) {
+    return num1;
+  } else {
+    let newStr = '';
+    for (let i = 1; i <= num2; i++) {
+      newStr += num1 * i + '---';
+    }
+    newStr = newStr.slice(0, -3);
+    return newStr;
+  }
+}
