@@ -1,0 +1,31 @@
+function getLengthOfMissingArray(arrayOfArrays) {
+
+  if (!Array.isArray(arrayOfArrays) || arrayOfArrays.length == 0) {
+    return 0;
+  }
+  for (let i = 0; i < arrayOfArrays.length; i++) {
+    if (arrayOfArrays[i] === null) {
+      return 0;
+    }
+  }
+
+  let newArr = [];
+  arrayOfArrays.forEach((array) => {
+    newArr.push(array.length);
+  });
+  newArr.sort((a, b) => a - b);
+
+  let missedNum = newArr[0];
+
+  if (missedNum === 0) {
+    return 0;
+  }
+
+  for (let i = 0; i < newArr.length; i++) {
+    if (newArr[i] === missedNum) {
+      missedNum++;
+    } else {
+      return missedNum;
+    }
+  }
+}
