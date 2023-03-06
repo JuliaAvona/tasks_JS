@@ -1,0 +1,28 @@
+function accum(s) {
+	let newAtring = '';
+  for (let i = 0; i < s.length; i++) {
+    let letter = s[i];
+    let index = i;
+    let Symbol = '';
+      for (let j = 0; j <= index; j++) {
+        if (j === 0) {
+          Symbol += letter.toUpperCase();
+        } else {
+          Symbol += letter.toLowerCase();
+        }
+      }
+    newAtring += Symbol + '-';
+  }
+  return newAtring.substring(0, newAtring.length - 1);;
+}
+
+
+
+/*
+This time no story, no theory. The examples below show you how to write function accum:
+Examples:
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+The parameter of accum is a string which includes only letters from a..z and A..Z.
+*/
