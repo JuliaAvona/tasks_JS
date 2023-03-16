@@ -1,3 +1,4 @@
+// option 1
 function arrayDiff(a, b) {
   let arrSpred1 = [...a];
   let arrSpred2 = [...b];
@@ -8,6 +9,16 @@ function arrayDiff(a, b) {
     }
   }
   return newArr;
+}
+
+// option 2
+function arrayDiff(a, b) {
+  return a.filter((item) => b.indexOf(item) === -1);
+}
+
+//option 3
+function arrayDiff(a, b) {
+  return a.filter((item) => !b.includes(item));
 }
 
 /*
