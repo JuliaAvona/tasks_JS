@@ -1,6 +1,17 @@
+// 1 option
 function arraysSimilar(arr1, arr2) {
   let newArr1 = arr1.slice('').sort();
   let newArr2 = arr2.slice('').sort();
+  if (JSON.stringify(newArr1) === JSON.stringify(newArr2)) {
+    return true;
+  } return false;
+}
+
+// 2 option
+
+function arraysSimilar(arr1, arr2) {
+  let newArr1 = [...arr1].sort();
+  let newArr2 = [...arr2].sort();
   if (JSON.stringify(newArr1) === JSON.stringify(newArr2)) {
     return true;
   } return false;
