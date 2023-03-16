@@ -1,4 +1,10 @@
 // 1 option
+
+function arraysSimilar(arr1, arr2) {
+  return (JSON.stringify([...arr1].sort()) === JSON.stringify([...arr2].sort()));
+}
+
+// 2 option
 function arraysSimilar(arr1, arr2) {
   let newArr1 = arr1.slice('').sort();
   let newArr2 = arr2.slice('').sort();
@@ -7,7 +13,7 @@ function arraysSimilar(arr1, arr2) {
   } return false;
 }
 
-// 2 option
+// 3 option
 
 function arraysSimilar(arr1, arr2) {
   let newArr1 = [...arr1].sort();
