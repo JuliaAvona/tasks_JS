@@ -23,6 +23,15 @@ function arraysSimilar(arr1, arr2) {
   } return false;
 }
 
+// 4 option
+
+function arraysSimilar(arr1, arr2) {
+  const arrSort1 = [...arr1].sort();
+  const arrSort2 = [...arr2].sort();
+  if (arrSort1.length !== arrSort2.length) {return false};
+  return (arrSort1.every((item, index) => item === arrSort2[index]));
+}
+
 /*
 
 Write a function that determines whether the passed in sequences are similar. Similar means they contain the same elements, and the same number of occurrences of elements.
