@@ -1,3 +1,4 @@
+//1
 function nextSmaller(n) {
   const minNum = manify(n);
   for (let i = n - 1; i >= minNum; i--) {
@@ -16,6 +17,19 @@ const manify = (n) =>
     .join("")
     .replace(/^(0+)([1-9])/, "$2$1");
     
+//2
+
+function nextSmaller(n) {
+  const minNum = manify(n);
+  for (let i = n - 1; i >= minNum; i--) {
+    if (manify(i) === minNum) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+const manify = (n) => [...`${n}`].sort().join('').replace(/^(0+)([1-9])/, '$2$1');
     
     /*
     
