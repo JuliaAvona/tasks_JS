@@ -1,0 +1,28 @@
+function stray(numbers) {
+  let newStr = numbers[0];
+  let newArr = numbers.slice(1);
+  if (newArr.indexOf(newStr) === -1) {
+    return newStr;
+  } else {
+    for(let i = 0; i < newArr.length; i++) {
+      if (newArr[i] !== newStr) {
+        console.log(newArr[i], numbers);
+        return newArr[i];
+      }
+    }
+  }
+}
+
+/*
+
+You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+
+Complete the method which accepts such an array, and returns that single different number.
+
+The input array will always be valid! (odd-length >= 3)
+
+Examples
+[1, 1, 2] ==> 2
+[17, 17, 3, 17, 17, 17, 17] ==> 3
+
+*/
