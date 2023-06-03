@@ -1,0 +1,22 @@
+const arr = [1,2,3,4,6,7,8,23,454];
+
+let search = function(num, target) {
+  let left = 0;
+  let right = num.length - 1;
+  let mid;
+
+  while (left <= right) {
+    mid = Math.round((right - left) / 2 + left);
+    if (target === num[mid]) {
+      return mid;
+    } else if (target < num[mid]) {
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
+  }
+  
+  return -1;
+}
+
+console.log(search(arr, 4504));
