@@ -1,0 +1,53 @@
+const romaArr = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
+
+var romanToInt = function(s) {
+  let result = [];
+  let str = s + '';
+  let ind = str.length * 2 - 2;
+
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i], ind);
+    result.push(ten(Number(str[i]), ind));
+    ind = ind - 2;
+    }
+  
+  return result.join('');
+};
+
+function ten(num, index) {
+  if (num <= 3) {
+    return romaArr[index].repeat(num);
+  } else if (num === 4) {
+    return romaArr[index] + romaArr[index + 1];
+  } else if (num === 5) {
+    return romaArr[index + 1];
+  } else if (num > 5 && num < 9) {
+    return romaArr[index + 1] + romaArr[index].repeat(num - 5);
+  } else if (num === 9) {
+    return romaArr[index] + romaArr[index + 2];
+  } 
+}
+
+console.log(romanToInt(1994));
+
+// console.log(ten(5, 2));
+// console.log(ten(8, 0));
+
+// console.log(ten(1, 6));
+// console.log(ten(9, 4));
+// console.log(ten(9, 2));
+// console.log(ten(4, 0));
+
+// Input: s = "III"
+// Output: 3
+// Explanation: III = 3.
+// Example 2:
+
+// Input: s = "LVIII"
+// Output: 58
+// Explanation: L = 50, V = 5, III = 3.
+// Example 3:
+
+// Input: s = "MCMXCIV"
+// Output: 1994
+// Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
