@@ -9,5 +9,6 @@
       stroke-width="10"
       backgroudColor="FFF"
       borderRadius="50%"
+      border="2px solid black"
     />
   </svg>
