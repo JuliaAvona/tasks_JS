@@ -15,9 +15,9 @@
               <stop offset="0" style="stop-color:#FF8C00"/>
               <stop offset="1" style="stop-color:#FF4500"/>
             </linearGradient>
-            <polygon id="Fill-1" class="st0" points="339.8,-57 -57.6,104.5 116.3,166.6 178.4,340.4"/>
-            <polygon id="Fill-3" class="st1" points="339.8,-57 110.1,172.8 178.4,340.4"/>
-            <polygon id="Fill-4" class="st2" points="103.9,179 178.4,340.4 153.5,129.3 -57.6,104.5"/>
+            <polygon id="Fill-1" class="st0" points="339.8,-57 -57.6,104.5 116.3,166.6 178.4,340.4" transform="rotate(5 178.4 166.6)"/>
+            <polygon id="Fill-3" class="st1" points="339.8,-57 110.1,172.8 178.4,340.4" transform="rotate(5 178.4 166.6)"/>
+            <polygon id="Fill-4" class="st2" points="103.9,179 178.4,340.4 153.5,129.3 -57.6,104.5" transform="rotate(5 178.4 166.6)"/>
           </g>
         </g>
       </g>
