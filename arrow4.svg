@@ -4,7 +4,7 @@
     .orangeFill{fill:#FF8C00;}
     .darkOrangeFill{fill:#FF4500;}
   </style>
-  <circle cx="198.7" cy="198.7" r="198.7" fill="rgba(40, 90, 168, 0.8)"/>
+  <circle cx="198.7" cy="198.7" r="198.7" fill="rgba(256, 256, 256, 0.8)"/>
   <g id="Navigation">
     <g id="ColorIcon">
       <g id="Icon" transform="translate(56.000000, 56.000000)">
