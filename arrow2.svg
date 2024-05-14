@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 397.4 397.4" style="enable-background:new 0 0 397.4 397.4;" xml:space="preserve">
   <style type="text/css">
-    .st0{fill:url(#Fill-1_1_);}
-    .st1{fill:#FF8C00;}
-    .st2{fill:#FF4500;}
+    .newGradient{fill:url(#Fill-1_1_);}
+    .newOrange{fill:#FF8C00;}
+    .newDarkOrange{fill:#FF4500;}
   </style>
   <g id="Navi">
     <g id="Color_x2F_icon_x5F_color">
@@ -13,9 +13,9 @@
               <stop offset="0" style="stop-color:#FF8C00"/>
               <stop offset="1" style="stop-color:#FF4500"/>
             </linearGradient>
-            <polygon id="Fill-1" class="st0" points="339.8,-57 -57.6,104.5 116.3,166.6 178.4,340.4"/>
-            <polygon id="Fill-3" class="st1" points="339.8,-57 110.1,172.8 178.4,340.4"/>
-            <polygon id="Fill-4" class="st2" points="103.9,179 178.4,340.4 153.5,129.3 -57.6,104.5"/>
+            <polygon id="Fill-1" class="newGradient" points="339.8,-57 -57.6,104.5 116.3,166.6 178.4,340.4"/>
+            <polygon id="Fill-3" class="newOrange" points="339.8,-57 110.1,172.8 178.4,340.4"/>
+            <polygon id="Fill-4" class="newDarkOrange" points="103.9,179 178.4,340.4 153.5,129.3 -57.6,104.5"/>
           </g>
         </g>
       </g>
